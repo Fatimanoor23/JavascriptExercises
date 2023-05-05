@@ -9,11 +9,10 @@ function countChar(str) {
 }
 function checkChar(str) {
   var countstr = countChar(str);
-  if (countstr > 10) {
-    return "The character string is greater than 10";
-  } else {
-    return "The character string is less than 10.";
-  }
+  return countstr > 10
+    ? " The Character string is Greater than 10."
+    : "The character string is less than 10.";
 }
 console.log(checkChar("SHDHSJS112323"));
 console.log(checkChar("123458"));
+console.log(checkChar("28748"));
